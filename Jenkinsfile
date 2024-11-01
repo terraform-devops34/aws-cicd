@@ -4,6 +4,8 @@ pipeline {
   environment {
     BRANCH_NAME = 'main'
     GTI_URL =  'https://github.com/terraform-devops34/aws-cicd.git'
+    IMAGE_TAG = 'terraform-devops34/aws-cicd'
+    IMAGE_VERSION = ${BUILD_NUMBER}
   }
 
    stages {
@@ -14,7 +16,7 @@ pipeline {
     }  
     stage('docker build'){
         steps{
-            sh 'docker build -t aws-cicd .'
+            sh 'docker build -t "${IMAGE_TAG}:${IMAGE_VERSION}"  .'
             sh 'docker images'
         }
     }
