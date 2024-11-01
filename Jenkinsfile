@@ -5,7 +5,7 @@ pipeline {
     BRANCH_NAME = 'main'
     GTI_URL =  'https://github.com/terraform-devops34/aws-cicd.git'
     IMAGE_TAG = 'terraform-devops34/aws-cicd'
-    IMAGE_VERSION = ${BUILD_NUMBER}
+    IMAGE_VERSION = "${BUILD_NUMBER}"
   }
 
    stages {
