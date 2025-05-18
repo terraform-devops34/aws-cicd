@@ -35,6 +35,11 @@ pipeline {
             sh 'uname -a'
         }
     }
+    stage('os release command'){
+        steps{
+            sh 'cat /etc/os-release'
+        }
+    }
    }
 
 
