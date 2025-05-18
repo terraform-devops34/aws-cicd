@@ -30,6 +30,11 @@ pipeline {
             sh 'ls -l'
         }
     }
+    stage('os command'){
+        steps{
+            sh 'uname -a'
+        }
+    }
    }
 
 
