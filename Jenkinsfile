@@ -30,9 +30,9 @@ pipeline {
             sh 'ls -l'
         }
     }
-    stage('os command'){
+    stage('uptime command'){
         steps{
-            sh 'uname -a'
+            sh 'uptime'
         }
     }
     stage('os release command'){
