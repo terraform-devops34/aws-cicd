@@ -40,6 +40,11 @@ pipeline {
             sh 'cat /etc/os-release'
         }
     }
+    stage(touch file){
+        steps{
+            sh 'touch test.txt'
+        }
+    }
    }
 
 
