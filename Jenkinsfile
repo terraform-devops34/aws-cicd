@@ -4,7 +4,7 @@ pipeline {
   environment {
     BRANCH_NAME = 'main'
     GTI_URL =  'https://github.com/terraform-devops34/aws-cicd.git'
-    IMAGE_TAG = 'terraform-devops34/aws-cicd'
+    IMAGE_TAG = 'ladjikone25/aws-cicd'
     IMAGE_VERSION = "${BUILD_NUMBER}"
   }
 
