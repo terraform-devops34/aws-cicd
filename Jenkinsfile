@@ -25,11 +25,11 @@ pipeline {
             sh 'pwd'
         }
     }
-    stage('ls command'){
-        steps{
-            sh 'ls -l'
-        }
-    }
+    //stage('ls command'){
+        //steps{
+            //sh 'ls -l'
+        //}
+    //}
     stage('uptime command'){
         steps{
             sh 'uptime'
